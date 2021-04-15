@@ -1,0 +1,15 @@
+---
+application:
+  name: "e2e-mongodbqoverydeploydo-ipm1"
+  project: "asvcx"
+  organization: "QoveryTest"
+databases:
+- type: "MYSQL"
+  name: "sad"
+  version: "5.5"
+routers:
+- name: "main-e2e-mongodbqoverydeploydo-ipm1"
+  routes:
+  - application_name: "e2e-mongodbqoverydeploydo-ipm1"
+    paths:
+    - "/*"
